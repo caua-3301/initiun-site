@@ -4,25 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cauã Pires">
+    <meta name="author" content="Riquelme Oliveira">
+    <meta name="keywords" content="project, junior, developemt">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Initiun Site</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<!-- container class in reference to bootstrap lib -->
+<body class="container-fluid px-5 py-4">
     <!--SEÇÃO MENU-->
-    <header class="menuPrincipal">
-        <nav class="menu">
-            <img class="logoNav" src="img/logo.png" alt="Minha Figura">
-            <a href="#" style="text-decoration: none; color: white; font-size: 25px;">Home</a>
-            <a href="#" style="text-decoration: none; color: white; font-size: 25px;">Projeto Initiun</a>
-            <a href="#" style="text-decoration: none; color: white; font-size: 25px;">Nosso Discord</a>
-            <a href="#" style="text-decoration: none; color: white; font-size: 25px;">Contato</a>
+    <header class="header row">
+        <nav class="menu d-flex flex-row justify-content-between align-items-center">
+            <div class="col-2">
+                <img class="logo-nav rounded-4" src="img/logo.png" alt="Logo da initiun">
+            </div>
+            <div id="links-nav" class="d-flex flex-row col-7">
+                <a class="text-white text-decoration-none col-3 text-center" href="#">Home</a>
+                <a class="text-white text-decoration-none col-3 text-center" href="#">Projeto Initiun</a>
+                <a class="text-white text-decoration-none col-3 text-center" href="#">Nosso Discord</a>
+            </div>
+            <button class="btn btn-outline-secondary">
+                <a class="text-white text-decoration-none col-2 text-center" href="#">CONTATO</a>
+            </button>
         </nav>
     </header>
 
     <!--SEÇÃO CORPO-->
-    <section id="corpo">
-
+    <section id="main" class="row container-fluid m-auto d-flex flex-row justify-content-center">
+        <div class="col-8">
+            <h1 class="main-title text-center text-white">TRANSFORMANDO IDEIAS EM INOVAÇÃO</h1>
+            <h2 class="cross-title text-center text-white">Initiun, onde o Futuro Encontra sua Fundação Tecnológica, junte-se ao funturo com a gente!</h2>
+        </div>
     </section>
 </body>
 

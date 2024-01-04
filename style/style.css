@@ -1,0 +1,69 @@
+/*Set main charset of project*/
+@charset "UTF-8";
+
+/*fonts imports*/
+@font-face {
+    font-family: 'rubic-doodle';
+    src: url('../fonts/Rubik_Doodle_Shadow/RubikDoodleShadow-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'rubic-glitch';
+    src: url('../fonts/Rubik_Glitch/RubikGlitch-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'tektur';
+    src: url('../fonts/Tektur/static/Tektur-Regular.ttf');
+}
+
+/*Gereal setings*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(45, 16, 54, 1) 70%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* -------------------- SEÇÃO MENU PRINCIPAL --------------------- */
+.menu-principal {
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 3%;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    gap: 10px;
+    display: flex;
+}
+
+.logo-nav {
+    width: 100px;
+    height: 75px;
+}
+
+/*style in the initiun logo*/
+.logo-nav {
+    width: 100px;
+    height: auto;
+}
+
+a {
+    font-family: 'tektur';
+}
+
+.main-title {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.cross-title {
+    font-size: 1.3em;
+}

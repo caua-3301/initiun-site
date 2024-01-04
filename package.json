@@ -1,0 +1,27 @@
+{
+  "name": "initiun-site",
+  "version": "1.0.0",
+  "description": "site developed A website developed with the aim of assisting the organizing team, as well as showcasing the work of Initiun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caua-3301/initiun-site.git"
+  },
+  "keywords": [
+    "initiun",
+    "project",
+    "junior"
+  ],
+  "author": "caua-3301, ron0-010",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/caua-3301/initiun-site/issues"
+  },
+  "homepage": "https://github.com/caua-3301/initiun-site#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
