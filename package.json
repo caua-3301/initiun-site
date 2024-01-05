@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/caua-3301/initiun-site#readme",
   "dependencies": {
-    "bootstrap": "^5.3.2"
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.3"
   }
 }

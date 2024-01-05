@@ -7,37 +7,84 @@
     <meta name="author" content="Cauã Pires">
     <meta name="author" content="Riquelme Oliveira">
     <meta name="keywords" content="project, junior, developemt">
-    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Initiun Site</title>
 </head>
 
 <!-- container class in reference to bootstrap lib -->
-<body class="container-fluid px-5 py-4">
-    <!--SEÇÃO MENU-->
-    <header class="header row">
-        <nav class="menu d-flex flex-row justify-content-between align-items-center">
-            <div class="col-2">
-                <img class="logo-nav rounded-4" src="img/logo.png" alt="Logo da initiun">
-            </div>
-            <div id="links-nav" class="d-flex flex-row col-7">
-                <a class="text-white text-decoration-none col-3 text-center" href="#">Home</a>
-                <a class="text-white text-decoration-none col-3 text-center" href="#">Projeto Initiun</a>
-                <a class="text-white text-decoration-none col-3 text-center" href="#">Nosso Discord</a>
-            </div>
-            <button class="btn btn-outline-secondary">
-                <a class="text-white text-decoration-none col-2 text-center" href="#">CONTATO</a>
-            </button>
-        </nav>
-    </header>
 
-    <!--SEÇÃO CORPO-->
-    <section id="main" class="row container-fluid m-auto d-flex flex-row justify-content-center">
-        <div class="col-8">
-            <h1 class="main-title text-center text-white">TRANSFORMANDO IDEIAS EM INOVAÇÃO</h1>
-            <h2 class="cross-title text-center text-white">Initiun, onde o Futuro Encontra sua Fundação Tecnológica, junte-se ao funturo com a gente!</h2>
-        </div>
+<body class="container-fluid p-0">
+    <!--SEÇÃO MENU-->
+    <img id="imagem-lines" src="./img/background/lines-purple.png" alt="">
+    <div id="home" class="p-4 pb-5 container-fluid">
+        <header id="header" class="header row">
+            <nav class="menu d-flex flex-row justify-content-between align-items-center">
+                <div id="title-initiun" class="col-2 click-activable">
+                    Initiun
+                </div>
+                <div id="links-nav" class="d-flex flex-row col-7">
+                    <a class="click-activable text-decoration-none col-3 text-center" href="#">Home</a>
+                    <a class="click-activable text-decoration-none col-3 text-center" href="#">Idealizadores</a>
+                    <a class="click-activable text-decoration-none col-3 text-center" href="#">Projeto Initiun</a>
+                    <a class="click-activable text-decoration-none col-3 text-center" href="#">Nosso Discord</a>
+                </div>
+                <button id="suport-button" class="click-activable btn">
+                    <a class="text-decoration-none col-3 text-center p-1" href="#">DÚVIDAS</a>
+                </button>
+            </nav>
+        </header>
+        <!--SEÇÃO CORPO-->
+        <section class="row container-fluid m-auto d-flex flex-row justify-content-center p-0">
+            <div class="col-8 click-activable" id="text-main">
+                <h1 class="main-title text-center">TRANSFORMANDO IDEIAS EM INOVAÇÃO</h1>
+                <h2 class="cross-title text-center">Initiun, onde o futuro encontra sua fundação tecnológica, onde sua
+                    ideia tem valor, junte-se ao funturo com a gente!</h2>
+            </div>
+        </section>
+        <section id="redirect-area" class="container-fluid row d-flex flex-row justify-content-center">
+            <button id="button-redirect" class="click-activable btn bg-purple col-2 mb-5"><a id="contact" href="malito:#"
+                    class="text-decoration-none">Entrar para initiun!</a></button>
+        </section>
+    </div>
+
+    <section id="about-the-creators" class="container-fluid row">
+        <!-- remove style list -->
+        <h2 id="creator-title" class="text-center border-bottom border-3 col-10 mx-auto">Idealizadores</h2>
+        <ul id="content-image" class="d-flex flex-row justify-content-center gap-5 list-unstyled">
+            <li class="col-3">
+                <div class="card d-flex flex-column align-items-center p-3">
+                    <img src="./img/fundadores/cauap-foto.jpg" class="creator-images card-img-top rounded-circle img-thumbnail" alt="Imagem do idealizador Cauã Pires">
+                    <div class="card-body">
+                        <h5 class="card-title fs-6 text-center">Cauã Pires Soares</h5>
+                        <p class="card-text fs-6 text-center">Desenvolvedor web full-stack, graduando em ADS pelo IFPB-CZ.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.linkedin.com/in/cau%C3%A3-pires-b31a44270/" rel="external" target="_blank" class="card-link fs-6 text-decoration-none">Linkedin</a>
+                        <a href="https://github.com/caua-3301" rel="external" target="_blank" class="card-link fs-6 text-decoration-none">GitHub</a>
+                    </div>
+                </div>
+            </li>
+            <li class="col-3">
+                <div class="card d-flex flex-column align-items-center p-3">
+                    <img src="./img/fundadores/riquelme-foto.jpg" class="creator-images card-img-top rounded-circle img-thumbnail" alt="Imagem do idealizador Riquelme Oliveira">
+                    <div class="card-body">
+                        <h5 class="card-title fs-6 text-center">Riquelme Oliveira</h5>
+                        <p class="card-text fs-6 text-center">Desenvolvedor back-end Java e C, cursando ADS pelo IFPB-CZ.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://www.linkedin.com/in/riquelme-oliveira/" rel="external" target="_blank" class="card-link fs-6 text-decoration-none">Linkedin</a>
+                        <a href="https://github.com/ron010-1" rel="external" target="_blank" class="card-link fs-6 text-decoration-none">GitHub</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </section>
+
+    <main id="about-the-project" class="container-fluid">
+        
+    </main>
 </body>
 
 </html>
