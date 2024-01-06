@@ -131,7 +131,7 @@ div > a:hover, #suport-button > a:hover {
 }
 
 #button-redirect {
-    background-color: rgb(95, 28, 95);
+    background-color: #5f1c5f;
     transition: all .4s;
     margin-top: 100px;
 }
@@ -143,4 +143,69 @@ div > a:hover, #suport-button > a:hover {
 
 .creator-images {
     width: 150px;
+}
+
+.card-lem {
+    background-color: #914991;
+}
+
+.text-card-color {
+    color: rgb(241, 241, 241);
+}
+
+.text-desc {
+    font-size: .9em;
+}
+
+.block-detail {
+    width: 110px;
+    height: 110px;
+    right: -20%;
+    background-color: #914991;
+}
+
+.imagem-block {
+    width: 90px;
+    height: 90px;
+    z-index: 3;
+}
+
+.detail-purple-card {
+    width: 145px;
+    height: 145px;
+    position: absolute;
+}
+
+.icon-inovation {
+    right: 0;
+    top: 20px;
+    z-index: 0;
+}
+
+.icon-networking {
+    right: -20px;
+    bottom: -35px;
+    transform: rotateZ(90deg);
+}
+
+.icon-trofy {
+    transform: rotateZ(180deg);
+    left: -35px;
+    bottom: -20px;
+    z-index: 1;
+}
+
+.icon-evolution {
+    top: -35px;
+    left: -20px;
+    transform: rotateZ(270deg);
+}
+
+h2 {
+    font-family: 'tektur';
+}
+
+#about-the-project {
+    background-image: url('../img/background/texture.png');
+    margin-top: 120px;
 }
