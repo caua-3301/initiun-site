@@ -28,7 +28,8 @@
     color: var(--tom-black);
 }
 
-#home {
+#home,
+#about-the-project {
     background-image: url('../img/background/texture.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,11 +53,15 @@
     margin-top: 60px;
 }
 
-#imagem-lines {
+.imagem-lines {
     z-index: 1;
     position: absolute;
     object-fit: cover;
     width: 100%;
+}
+
+.imagem-lines-2 {
+    width: 99%;
 }
 
 .click-activable {
@@ -79,14 +84,15 @@
     height: auto;
 }
 
-div > a {
+div>a {
     font-family: 'tektur', sans-serif;
     color: var(--tom-black);
     transition: all .4s;
     padding: 2px;
 }
 
-div > a:hover, #suport-button > a:hover {
+div>a:hover,
+#suport-button>a:hover {
     background-color: rgb(165, 80, 165);
     color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -107,7 +113,7 @@ div > a:hover, #suport-button > a:hover {
     margin-top: 120px;
 }
 
-#suport-button > a {
+#suport-button>a {
     color: var(--tom-black);
     font-family: 'tektur', sans-serif;
     border: 1px solid rgb(40, 40, 40);
@@ -117,7 +123,7 @@ div > a:hover, #suport-button > a:hover {
 
 #title-initiun {
     color: var(--tom-black);
-    font: normal bold 3em 'tektur', sans-serif; 
+    font: normal bold 3em 'tektur', sans-serif;
 }
 
 #contact {
@@ -206,6 +212,83 @@ h2 {
 }
 
 #about-the-project {
-    background-image: url('../img/background/texture.png');
-    margin-top: 120px;
+    margin-top: 140px;
+}
+
+#botao-menu {
+    display: none;
+}
+
+/*Ajust in the resposivit*/
+
+@media (min-width: 0px) and (max-width: 550px) {
+
+    .main-title {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #butons-nav {
+        display: none;
+    }
+
+    #title-initiun {
+        font-size: 2em;
+    }
+
+    /*responsive menu*/
+
+    /*Botao do meu menu hamburguer*/
+    #botao-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 26px;
+        height: 22px;
+        position: absolute;
+        transition: all .6s;
+        top: 24px;
+        right: 25px;
+    }
+
+    /*Cada barra individual do meu menu*/
+    .menu-bars {
+        background-color: var(--tom-black);
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin: 0;
+        height: 2px;
+        transition: all .6s;
+    }
+
+    /*Trantando cada barra do menu de forma individual quando ativo*/
+    .ativo span:nth-child(1) {
+        transform: rotate(-45deg) translate(-4px, 6px);
+        transition: all .6s;
+    }
+
+    .ativo span:nth-child(2) {
+        opacity: 0;
+        transition: all .6s;
+    }
+
+    .ativo span:nth-child(3) {
+        transform: rotate(45deg) translate(-7.5px, -10.8px);
+        transition: all .6s;
+    }
+
+    .cross-title {
+        font-size: .85em;
+    }
+
+    .block-detail {
+        width: 90px;
+        height: 90px;
+    }
+
+    .detail-purple-card {
+        width: 125px;
+        height: 125px;
+    }
 }

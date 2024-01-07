@@ -15,133 +15,177 @@
 
 <!-- container class in reference to bootstrap lib -->
 
-<body class="container-fluid p-0 row">
+<body class="container-fluid p-0 m-0 row">
     <!--SEÇÃO MENU-->
-    <img id="imagem-lines" src="./img/background/lines-purple.png" alt="">
-    <div id="home" class="p-4 pb-5 container-fluid">
-        <header id="header" class="header row">
-            <nav class="menu d-flex flex-row justify-content-between align-items-center">
-                <div id="title-initiun" class="col-2 click-activable">
-                    Initiun
-                </div>
-                <div id="links-nav" class="d-flex flex-row col-7">
-                    <a class="click-activable text-decoration-none col-3 text-center" href="#">Home</a>
-                    <a class="click-activable text-decoration-none col-3 text-center" href="#">Idealizadores</a>
-                    <a class="click-activable text-decoration-none col-3 text-center" href="#">Projeto Initiun</a>
-                    <a class="click-activable text-decoration-none col-3 text-center" href="#">Nosso Discord</a>
-                </div>
-                <button id="suport-button" class="click-activable btn">
-                    <a class="text-decoration-none col-3 text-center p-1" href="#">DÚVIDAS</a>
+    <img class="imagem-lines" src="./img/background/lines-purple.png" alt="">
+    <div id="home" class="p-3 p-sm-4 pb-sm-5 container-fluid">
+        <header id="header" class="header d-flex flex-row">
+            <div id="title-initiun" class="click-activable">
+                Initiun
+            </div>
+
+            <div id="botao-menu" class="z-3">
+                <span class="menu-bars"></span>
+                <span class="menu-bars"></span>
+                <span class="menu-bars"></span>
+            </div>
+
+            <div id="butons-nav" class="row col-10">
+                <nav id="main-nav" class="menu col-9 d-flex align-items-center">
+                    <div id="links-nav" class="d-flex flex-row row justify-content-between container-fluid">
+                        <a class="click-activable text-decoration-none col-3 text-center" href="#">Home</a>
+                        <a class="click-activable text-decoration-none col-3 text-center" href="#">Idealizadores</a>
+                        <a class="click-activable text-decoration-none col-3 text-center" href="#">Projeto Initiun</a>
+                        <a class="click-activable text-decoration-none col-3 text-center" href="#">Nosso Discord</a>
+                    </div>
+                </nav>
+                <button id="suport-button" class="click-activable btn col-3">
+                    <a class="text-decoration-none text-center p-1" href="#">DÚVIDAS</a>
                 </button>
-            </nav>
+            </div>
         </header>
         <!--SEÇÃO CORPO-->
         <section class="row container-fluid m-auto d-flex flex-row justify-content-center p-0">
-            <div class="col-8 click-activable" id="text-main">
+            <div class="col-12 col-sm-8 click-activable" id="text-main">
                 <h1 class="main-title text-center">TRANSFORMANDO IDEIAS EM INOVAÇÃO</h1>
                 <h2 class="cross-title text-center">Initiun, onde o futuro encontra sua fundação tecnológica, onde sua
                     ideia tem valor, junte-se ao funturo com a gente!</h2>
             </div>
         </section>
         <section id="redirect-area" class="container-fluid row d-flex flex-row justify-content-center">
-            <button id="button-redirect" class="click-activable btn bg-purple col-2 mb-5"><a id="contact" href="malito:#"
-                    class="text-decoration-none">Entrar para initiun!</a></button>
+            <button id="button-redirect" class="click-activable btn bg-purple col-10 col-sm-2 mb-5"><a id="contact"
+                    href="malito:#" class="text-decoration-none">Entrar para initiun!</a></button>
         </section>
     </div>
 
-    <section id="about-the-creators" class="container-fluid row">
+    <section id="about-the-creators" class="container-fluid">
         <!-- remove style list -->
         <h2 id="creator-title" class="text-center border-bottom border-3 col-10 mx-auto">Idealizadores</h2>
-        <ul id="content-image" class="d-flex flex-row justify-content-center gap-5 list-unstyled">
-            <li class="col-3">
+        <ul id="content-image" class="d-flex flex-row justify-content-center gap-5 list-unstyled flex-wrap">
+            <li class="col-10 col-sm-3">
                 <div class="card d-flex flex-column align-items-center p-3">
-                    <img src="./img/fundadores/cauap-foto.jpg" class="creator-images card-img-top rounded-circle img-thumbnail" alt="Imagem do idealizador Cauã Pires">
+                    <img src="./img/fundadores/cauap-foto.jpg"
+                        class="creator-images card-img-top rounded-circle img-thumbnail"
+                        alt="Imagem do idealizador Cauã Pires">
                     <div class="card-body">
                         <h5 class="card-title fs-6 text-center">Cauã Pires Soares</h5>
-                        <p class="card-text fs-6 text-center">Desenvolvedor web full-stack, graduando em ADS pelo IFPB-CZ.</p>
+                        <p class="card-text fs-6 text-center">Desenvolvedor web full-stack, graduando em ADS pelo
+                            IFPB-CZ.</p>
                     </div>
                     <div class="card-body">
-                        <a href="https://www.linkedin.com/in/cau%C3%A3-pires-b31a44270/" rel="external" target="_blank" class="card-link fs-6 text-decoration-none">Linkedin</a>
-                        <a href="https://github.com/caua-3301" rel="external" target="_blank" class="card-link fs-6 text-decoration-none">GitHub</a>
+                        <a href="https://www.linkedin.com/in/cau%C3%A3-pires-b31a44270/" rel="external" target="_blank"
+                            class="card-link fs-6 text-decoration-none">Linkedin</a>
+                        <a href="https://github.com/caua-3301" rel="external" target="_blank"
+                            class="card-link fs-6 text-decoration-none">GitHub</a>
                     </div>
                 </div>
             </li>
-            <li class="col-3">
+            <li class="col-10 col-sm-3">
                 <div class="card d-flex flex-column align-items-center p-3">
-                    <img src="./img/fundadores/riquelme-foto.jpg" class="creator-images card-img-top rounded-circle img-thumbnail" alt="Imagem do idealizador Riquelme Oliveira">
+                    <img src="./img/fundadores/riquelme-foto.jpg"
+                        class="creator-images card-img-top rounded-circle img-thumbnail"
+                        alt="Imagem do idealizador Riquelme Oliveira">
                     <div class="card-body">
                         <h5 class="card-title fs-6 text-center">Riquelme Oliveira</h5>
-                        <p class="card-text fs-6 text-center">Desenvolvedor back-end Java e C, cursando ADS pelo IFPB-CZ.</p>
+                        <p class="card-text fs-6 text-center">Desenvolvedor back-end Java e C, cursando ADS pelo
+                            IFPB-CZ.</p>
                     </div>
                     <div class="card-body">
-                        <a href="https://www.linkedin.com/in/riquelme-oliveira/" rel="external" target="_blank" class="card-link fs-6 text-decoration-none">Linkedin</a>
-                        <a href="https://github.com/ron010-1" rel="external" target="_blank" class="card-link fs-6 text-decoration-none">GitHub</a>
+                        <a href="https://www.linkedin.com/in/riquelme-oliveira/" rel="external" target="_blank"
+                            class="card-link fs-6 text-decoration-none">Linkedin</a>
+                        <a href="https://github.com/ron010-1" rel="external" target="_blank"
+                            class="card-link fs-6 text-decoration-none">GitHub</a>
                     </div>
                 </div>
             </li>
         </ul>
+        <img class="imagem-lines imagem-lines-2" src="./img/background/lines-purple-2.png" alt="">
     </section>
 
-    <main id="about-the-project" class="p-0">
+    <main id="about-the-project" class="container-fluid pt-3">
+
         <h2 id="values-text" class="text-center border-bottom border-3 col-10 mx-auto my-5">Nossos objetivos</h2>
-        <ul id="container-cards-lems" class="container-fluid d-flex flex-row flex-wrap align-items-center list-unstyled row justify-content-center gap-3">
-            <li class="col-4 card-lem rounded-3 h-auto d-flex flex-column position-relative justify-content-left px-3 py-3 m-5">
+        <ul id="container-cards-lems"
+            class="container-fluid d-flex flex-row flex-wrap align-items-center list-unstyled row justify-content-center gap-3 z-3 row ">
+            <li
+                class="col-11 col-sm-4 card-lem rounded-3 h-auto d-flex flex-column position-relative justify-content-left px-3 py-3 m-5">
                 <div class="d-flex flex-column text-card-color text-desc gap-0">
-                    <h2 class="fs-3 m-0 p-0">Inovação</h2>
-                    <p class="fs-6 m-0 p-0 text-card-color" >Inove, simplifique, mude!</p>
+                    <h2 class="fs-3 m-0 p-0 z-3">Inovação</h2>
+                    <p class="fs-6 m-0 p-0 text-card-color z-3">Inove, simplifique, mude!</p>
                 </div>
-                <p class="text-card-color text-desc mt-4">"Inovação requer a capacidade de colaborar e compartilhar ideias com outras pessoas." - Ronald van Loon</p>
+                <p class="text-card-color text-desc mt-4 z-3">"Inovação requer a capacidade de colaborar e compartilhar
+                    ideias com outras pessoas." - Ronald van Loon</p>
 
-                <div class="block-detail position-absolute top-10 translate-middle rounded-3 d-flex flex-row justify-content-center">
-                    <img src="./img/cards-details/ligth-removebg-preview.png" class="imagem-block align-self-center" alt="icone de uma lampada">
-                    <img src="./img/cards-details/detail-purple-card.png" class="detail-purple-card icon-inovation" alt="detalhe do card">
+                <div
+                    class="block-detail position-absolute top-10 translate-middle rounded-3 d-flex flex-row justify-content-center z-3">
+                    <img src="./img/cards-details/ligth-removebg-preview.png" class="imagem-block align-self-center"
+                        alt="icone de uma lampada z-3">
+                    <img src="./img/cards-details/detail-purple-card.png" class="detail-purple-card icon-inovation"
+                        alt="detalhe do card z-3">
                 </div>
             </li>
 
-            <li class="col-4 card-lem rounded-3 h-auto d-flex flex-column position-relative justify-content-left px-3 py-3 m-5">
+            <li
+                class="col-11 col-sm-4 card-lem rounded-3 h-auto d-flex flex-column position-relative justify-content-left px-3 py-3 m-5 z-3">
                 <div class="d-flex flex-column text-card-color text-desc gap-0">
-                    <h2 class="fs-3 m-0 p-0">Networking</h2>
-                    <p class="fs-6 m-0 p-0 text-card-color" >Conheça e cresça!</p>
+                    <h2 class="fs-3 m-0 p-0 z-3">Networking</h2>
+                    <p class="fs-6 m-0 p-0 text-card-color z-3">Conheça e cresça!</p>
                 </div>
-                <p class="text-card-color text-desc mt-4">"Se você quer ir rápido, vá sozinho. Se você quer ir longe, vá acompanhado." - Provérbio Africano</p>
+                <p class="text-card-color text-desc mt-4 z-3">"Se você quer ir rápido, vá sozinho. Se você quer ir
+                    longe, vá acompanhado." - Provérbio Africano</p>
 
-                <div class="block-detail position-absolute top-10 translate-middle rounded-3 d-flex flex-row justify-content-center">
-                    <img src="./img/cards-details/shak-hand-removebg-preview.png" class="imagem-block align-self-center" alt="icone de uma lampada">
+                <div
+                    class="block-detail position-absolute top-10 translate-middle rounded-3 d-flex flex-row justify-content-center">
+                    <img src="./img/cards-details/shak-hand-removebg-preview.png" class="imagem-block align-self-center"
+                        alt="icone de uma lampada">
                 </div>
 
-                <img src="./img/cards-details/detail-purple-card.png" class="detail-purple-card icon-networking" alt="detalhe do card">
+                <img src="./img/cards-details/detail-purple-card.png" class="detail-purple-card icon-networking"
+                    alt="detalhe do card">
             </li>
 
-            <li class="col-4 card-lem rounded-3 h-auto d-flex flex-column position-relative justify-content-left px-3 py-3 m-5">
+            <li
+                class="col-11 col-sm-4 card-lem rounded-3 h-auto d-flex flex-column position-relative justify-content-left px-3 py-3 m-5">
                 <div class="d-flex flex-column text-card-color text-desc gap-0">
-                    <h2 class="fs-3 m-0 p-0">Competições</h2>
-                    <p class="fs-6 m-0 p-0 text-card-color z-2" >Esforce-se, seja o melhor!</p>
+                    <h2 class="fs-3 m-0 p-0 z-3">Competições</h2>
+                    <p class="fs-6 m-0 p-0 text-card-color z-2">Esforce-se, seja o melhor!</p>
                 </div>
-                <p class="text-card-color text-desc mt-4 z-2">"A competição é sempre uma boa coisa. Ela força-nos a fazer o nosso melhor." - Jim Butcher</p>
+                <p class="text-card-color text-desc mt-4 z-3">"A competição é sempre uma boa coisa. Ela força-nos a
+                    fazer o nosso melhor." - Jim Butcher</p>
 
-                <div class="block-detail position-absolute top-10 translate-middle rounded-3 d-flex flex-row justify-content-center">
-                    <img src="./img/cards-details/trofy-removebg-preview.png" class="imagem-block align-self-center" alt="icone de um trofeu">
+                <div
+                    class="block-detail position-absolute top-10 translate-middle rounded-3 d-flex flex-row justify-content-center z-3">
+                    <img src="./img/cards-details/trofy-removebg-preview.png" class="imagem-block align-self-center z-3"
+                        alt="icone de um trofeu">
                 </div>
 
-                <img src="./img/cards-details/detail-purple-card.png" class="detail-purple-card icon-trofy" alt="detalhe do card">
+                <img src="./img/cards-details/detail-purple-card.png" class="detail-purple-card icon-trofy z-3"
+                    alt="detalhe do card">
             </li>
 
-            <li class="col-4 card-lem rounded-3 h-auto d-flex flex-column position-relative justify-content-left px-3 py-3 m-5">
-                <div class="d-flex flex-column text-card-color text-desc gap-0">
+            <li
+                class="col-11 col-sm-4 card-lem rounded-3 h-auto d-flex flex-column position-relative justify-content-left px-3 py-3 m-5 z-3">
+                <div class="d-flex flex-column text-card-color text-desc gap-0 z-3">
                     <h2 class="fs-3 m-0 p-0 z-2">Evolução</h2>
-                    <p class="fs-6 m-0 p-0 text-card-color z-2" >Seja melhor que ontem</p>
+                    <p class="fs-6 m-0 p-0 text-card-color z-2">Seja melhor que ontem</p>
                 </div>
-                <p class="text-card-color text-desc mt-4 z-2">"A verdadeira evolução pessoal está em aprender a deixar ir o que você não pode mudar." - Hal Elrod
+                <p class="text-card-color text-desc mt-4 z-2">"A verdadeira evolução pessoal está em aprender a deixar
+                    ir o que você não pode mudar." - Hal Elrod
                     n</p>
 
-                <div class="block-detail position-absolute top-10 translate-middle rounded-3 d-flex flex-row justify-content-center">
-                    <img src="./img/cards-details/evolution-removebg-preview.png" class="imagem-block align-self-center" alt="icone de um grafico">
+                <div
+                    class="block-detail position-absolute top-10 translate-middle rounded-3 d-flex flex-row justify-content-center z-3">
+                    <img src="./img/cards-details/evolution-removebg-preview.png" class="imagem-block align-self-center"
+                        alt="icone de um grafico z-3">
                 </div>
 
-                <img src="./img/cards-details/detail-purple-card.png" class="detail-purple-card icon-evolution" alt="detalhe do card z-1">
+                <img src="./img/cards-details/detail-purple-card.png" class="detail-purple-card icon-evolution"
+                    alt="detalhe do card z-1">
             </li>
         </ul>
     </main>
+
+    <script src="./scripts/menu-responsive/menuapp.js" defer></script>
 </body>
 
 </html>
