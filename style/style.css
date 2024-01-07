@@ -221,7 +221,7 @@ h2 {
 
 /*Ajust in the resposivit*/
 
-@media (min-width: 0px) and (max-width: 550px) {
+@media (0px <= width <= 550px) {
 
     .main-title {
         font-size: 1.5em;
