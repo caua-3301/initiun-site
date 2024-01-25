@@ -22,6 +22,10 @@
     --tom-font-gray: rgb(230, 230, 230);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /*Gereal setings*/
 * {
     margin: 0;
@@ -40,7 +44,7 @@ body {
     z-index: 0;
     height: 105vmin;
     /* black theme idea */
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(45, 16, 54, 1) 70%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, #2d1036 70%, rgba(0, 0, 0, 1) 100%);
 }
 
 /* -------------------- SEÇÃO MENU PRINCIPAL --------------------- */
@@ -160,6 +164,13 @@ div>a:hover,
 
 .creator-images {
     width: 150px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.creator-images:hover {
+    transform: scale(108%);
+    transition: all .5s;
 }
 
 .card-lem {
@@ -189,6 +200,10 @@ div>a:hover,
 
 .about-create {
     color: var(--tom-font-black);
+}
+
+#about-the-project {
+    color: black;
 }
 
 .detail-purple-card {
@@ -226,25 +241,64 @@ h2 {
     font-family: 'tektur';
 }
 
-.wave {
+#cont-wave {
     width: 100%;
-    position: absolute;
-    bottom: -38px;
 }
 
-/*Animação da onda*/
+.wave {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: -65px;
+    background-image: url('../img/background/wave-ajus.png');
+    background-repeat: no-repeat;
+}
+
+/* Animação da onda */
 @keyframes animate-wave {
     0% {
         background-position-x: 0%;
     }
 
     50% {
-        background-position-x: 70%;
+        background-position-x: 120%;
     }
 
     100% {
-        background-position-x: 0.1%;
+        background-position-x: 0%;
     }
+}
+
+.wave1 {
+    filter: opacity(90%);
+    animation-delay: 0;
+    z-index: 2;
+    left: -200px;
+    animation: animate-wave 5s linear infinite;
+}
+
+.wave2 {
+    z-index: 3;
+    filter: opacity(50%);
+    animation-delay: 8s;
+    left: 300px;
+    animation: animate-wave 10s linear infinite;
+}
+
+.wave3 {
+    z-index: 5;
+    filter: opacity(30%);
+    animation-delay: 8s;
+    left: -50px;
+    animation: animate-wave 10s linear infinite;
+}
+
+.wave4 {
+    z-index: 2;
+    filter: opacity(80%);
+    animation-delay: 1s;
+    left: -180px;
+    animation: animate-wave 20s linear infinite;
 }
 
 #botao-menu {
