@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="style/bootstrap-icons.min.css">
     <title>Initiun Site</title>
 </head>
 
@@ -17,7 +18,7 @@
 
 <body class="container-fluid p-0">
     <!--SEÇÃO MENU-->
-    <div id="home" class="p-3 p-sm-0 pb-sm-0 container-fluid overflow-hidden">
+    <div id="home" class="p-3 p-sm-0 pb-sm-0 container-fluid overflow-auto">
         <header id="header" class="d-flex flex-row p-3">
             <div id="title-initiun" class="click-activable col-2">
                 Initiun
@@ -50,7 +51,8 @@
         <section class="container-fluid m-auto d-flex flex-row justify-content-center p-0">
             <div class="col-10 col-sm-8 click-activable" id="text-main">
                 <h1 class="main-title text-center">TRANSFORMANDO IDEIAS EM INOVAÇÃO</h1>
-                <h2 class="cross-title text-center mt-4">Initiun, onde o futuro encontra sua fundação tecnológica, onde sua
+                <h2 class="cross-title text-center mt-4">Initiun, onde o futuro encontra sua fundação tecnológica, onde
+                    sua
                     ideia tem valor, junte-se ao funturo com a gente!</h2>
             </div>
         </section>
@@ -58,6 +60,10 @@
             <button id="button-redirect" class="click-activable btn bg-purple mb-5"><a id="contact" href="#"
                     class="text-decoration-none">Entrar para initiun!</a></button>
         </section>
+
+        <!-- Detail -->
+        <img id="arrow-down" class="position-absolute" src="./img/background/arrow-removebg-preview.png"
+            alt="arrow down">
 
         <div id="cont-wave">
             <div class="wave wave1"></div>
@@ -69,7 +75,7 @@
 
     <section id="about-the-creators" class="container-fluid">
         <!-- remove style list -->
-        <h2 id="creator-title" class="text-center border-bottom border-3 col-10 mx-auto">Idealizadores</h2>
+        <h2 class="creator-title text-center border-bottom border-3 col-10 mx-auto">Idealizadores</h2>
         <ul id="content-image" class="d-flex flex-row justify-content-center gap-5 list-unstyled flex-wrap">
             <li class="col-10 col-sm-3">
                 <div class="card d-flex flex-column align-items-center p-3">
@@ -111,9 +117,101 @@
 
     </section>
 
-    <main id="about-the-project" class="container-fluid pt-3">
-        SOBRE O PROJETO
+    <main id="about-the-project" class="container-fluid pt-3 mb-5">
+        <h2 class="creator-title text-center border-bottom border-3 col-10 mx-auto">Sobre a Initium</h2>
+        <section id="about-initium-container"
+            class="d-flex flex-row mx-auto flex-wrap gap-4 justify-content-center mt-5 position-relative">
+
+
+            <div id="inovation" class="card-about p-3 d-flex flex-column justify-content-between position-relative overflow-hidden">
+                <div class="d-flex flex-row justify-content-between">
+                    <div>
+                        <p class="fw-bold fs-4 m-0 teste">Inovação</p>
+                        <p class="sub-title-card">Inove, simplifique, mude!</p>
+                    </div>
+                    <img src="./img/cards-details/ligth-removebg-preview.png" alt="Uma lâmpada" class="icon-img-about">
+                </div>
+                <p class="align-self-center description-card text-center">"Inovação requer a capacidade de colaborar e
+                    compartilhar
+                    ideias com outras
+                    pessoas."</p>
+                <p class="text-center"><strong>- Ronald van Loon -</strong></p>
+
+                <!-- Datail -->
+                <div class="datil-card-rigth"></div>
+
+            </div>
+
+
+            <div id="networking"
+                class="card-about p-3 d-flex flex-column justify-content-between position-relative overflow-hidden">
+                <div class="d-flex flex-row justify-content-between">
+                    <div>
+                        <p class="fw-bold fs-4 m-0 teste">Networking</p>
+                        <p class="sub-title-card">Conheça e cresça!</p>
+                    </div>
+                    <img src="./img/cards-details/shak-hand-removebg-preview.png" alt="Um aperto de mao"
+                        class="icon-img-about">
+                </div>
+                <p class="align-self-center description-card text-center">"Se você quer ir rápido, vá sozinho. Se você
+                    quer ir
+                    longe, vá acompanhado."
+                </p>
+                <p class="text-center"><strong>- Provérbio Africano -</strong></p>
+
+                <!-- Datail -->
+                <div class="datil-card-left"></div>
+
+                <div class="datil-card-rigth"></div>
+            </div>
+
+            <div id="competicion" class="card-about p-3 d-flex flex-column justify-content-between position-relative overflow-hidden">
+                <div class="d-flex flex-row justify-content-between">
+                    <div>
+                        <p class="fw-bold fs-4 m-0 teste">Competições</p>
+                        <p class="sub-title-card">Esforce-se, seja o melhor!</p>
+                    </div>
+                    <img src="./img/cards-details/trofy-removebg-preview.png" alt="Um trofeu" class="icon-img-about">
+                </div>
+                <p class="align-self-center description-card text-center">"A competição é sempre uma boa coisa. Ela
+                    força-nos a
+                    fazer o nosso melhor."
+                </p>
+                <p class="text-center"><strong>- Jim Butcher -</strong></p>
+
+                <!-- Datail -->
+                <div class="datil-card-left"></div>
+
+                <div class="datil-card-rigth"></div>
+            </div>
+
+            <div id="evolution" class="card-about p-3 d-flex flex-column justify-content-between position-relative overflow-hidden">
+                <div class="d-flex flex-row justify-content-between">
+                    <div>
+                        <p class="fw-bold fs-4 m-0 teste">Evolução</p>
+                        <p class="sub-title-card">Seja hoje melhor que ontem!</p>
+                    </div>
+                    <img src="./img/cards-details/evolution-removebg-preview.png" alt="Um ser humano"
+                        class="icon-img-about">
+                </div>
+                <p class="align-self-center description-card text-center">"A verdadeira evolução pessoal está em
+                    aprender a deixar
+                    ir o que você não pode mudar."</p>
+                <p class="text-center"><strong>- Hal Elrod -</strong></p>
+
+                <!-- Datail -->
+                <div class="datil-card-left"></div>
+            </div>
+
+        </section>
     </main>
+
+    <section id="discord-area" class="pt-4 container-fluid">
+        <h2 class="creator-title text-center border-bottom border-3 col-10 mx-auto">Discord</h2>
+        <div id="discord-cont" class="col-10 m-auto mt-5">
+
+        </div>
+    </section>
 
     <script src="./scripts/menu-responsive/menuapp.js" defer></script>
 </body>
