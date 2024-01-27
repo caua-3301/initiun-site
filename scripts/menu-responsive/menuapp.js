@@ -4,4 +4,12 @@ buttomMenu.addEventListener('click', e => {
     buttomMenu.classList.toggle('ativo')
     const menuContent = document.querySelector("#just-toggle");
     menuContent.classList.toggle("effect-menu-bar");
+
+    let bodyAplication = Array.from(document.querySelector("body").children);
+
+    // bodyAplication.forEach(item => {
+    //     item.classList.toggle("blur-all");
+    // })
+
+    // document.querySelector("#just-toggle").classList.remove("blur-all");
 })

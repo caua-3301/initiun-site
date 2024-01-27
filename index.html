@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="style/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style/font/bootstrap-icons.min.css">
     <title>Initiun Site</title>
 </head>
 
@@ -18,7 +18,7 @@
 
 <body class="container-fluid p-0">
     <!--SEÇÃO MENU-->
-    <div id="home" class="p-3 p-sm-0 pb-sm-0 container-fluid overflow-auto">
+    <div id="home" class="p-3 p-sm-0 pb-sm-0 container-fluid">
         <header id="header" class="d-flex flex-row p-3">
             <div id="title-initiun" class="click-activable col-2">
                 Initiun
@@ -30,16 +30,15 @@
                 <span class="menu-bars"></span>
             </div>
 
-            <div id="just-toggle" class="d-flex flex-row butons-nav effect-menu-bar col-10">
-                <nav id="main-nav" class="menu col-9 d-flex align-items-center">
-                    <div id="links-nav" class="d-flex flex-row row justify-content-between container-fluid">
+            <div id="just-toggle" class="d-flex flex-row butons-nav effect-menu-bar col-10 align-items-center">
+                <nav id="main-nav" class="menu col-9 d-flex align-items-center justify-content-center">
+                    <div id="links-nav" class="d-flex flex-row row justify-content-between container-fluid align-items-center">
                         <a class="click-activable text-decoration-none col-12 col-sm-3 text-center" href="#">Home</a>
                         <a class="click-activable text-decoration-none col-12 col-sm-3 text-center"
                             href="#">Idealizadores</a>
                         <a class="click-activable text-decoration-none col-12 col-sm-3 text-center" href="#">Projeto
                             Initiun</a>
-                        <a class="click-activable text-decoration-none col-12 col-sm-3 text-center" href="#">Nosso
-                            Discord</a>
+                        <a class="click-activable text-decoration-none col-12 col-sm-3 text-center" href="#">Contatos</a>
                     </div>
                 </nav>
                 <button id="suport-button" class="click-activable btn col-2">
@@ -65,19 +64,14 @@
         <img id="arrow-down" class="position-absolute" src="./img/background/arrow-removebg-preview.png"
             alt="arrow down">
 
-        <div id="cont-wave">
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-            <div class="wave wave4"></div>
-        </div>
+        
     </div>
 
     <section id="about-the-creators" class="container-fluid">
         <!-- remove style list -->
         <h2 class="creator-title text-center border-bottom border-3 col-10 mx-auto">Idealizadores</h2>
         <ul id="content-image" class="d-flex flex-row justify-content-center gap-5 list-unstyled flex-wrap">
-            <li class="col-10 col-sm-3">
+            <li class="col-10 col-sm-6 col-lg-3 p-0 m-0">
                 <div class="card d-flex flex-column align-items-center p-3">
                     <img src="./img/fundadores/cauap-foto.jpg"
                         class="creator-images card-img-top rounded-circle img-thumbnail"
@@ -95,7 +89,7 @@
                     </div>
                 </div>
             </li>
-            <li class="col-10 col-sm-3">
+            <li class="col-10 col-sm-6 col-lg-3 p-0 m-0">
                 <div class="card d-flex flex-column align-items-center p-3">
                     <img src="./img/fundadores/riquelme-foto.jpg"
                         class="creator-images card-img-top rounded-circle img-thumbnail"
@@ -206,14 +200,32 @@
         </section>
     </main>
 
-    <section id="discord-area" class="pt-4 container-fluid">
-        <h2 class="creator-title text-center border-bottom border-3 col-10 mx-auto">Discord</h2>
-        <div id="discord-cont" class="col-10 m-auto mt-5">
+    <section id="contact-area" class="pt-4 container-fluid">
+        <h2 class="creator-title text-center border-bottom border-3 col-10 mx-auto">Contatos</h2>
+        <ul id="contact-cont" class="col-7 m-auto mt-5 list-unstyled d-flex flex-row flex-wrap m-auto justify-content-center align-items-center">
+            <li id="email-cont" class="d-flex flex-column align-items-center position-relative">
+                <a id="discord" class="icon-active" href="https://discord.gg/3Bt29fYV"><i class="bi bi-discord icon"></i></a>
+                <p>Venha conhecer nossa comunidade</p>
+                <div class="detail-purple rounded-circle circ position-absolute"></div>
+                <div class="detail-purple rounded-circle circ position-absolute small"></div>
+            </li>
 
-        </div>
+            <li id="discord-cont" class="d-flex flex-column align-items-center position-relative">
+                <a id="email" class="icon-active" href="#"><i class="bi bi-envelope icon"></i></a>
+                <p>Contate-nos pelo nosso e-mail</p>
+                <div class="detail-purple position-absolute cube"></div>
+                <div class="detail-purple position-absolute cube small subesm"></div>
+            </li>
+        </ul>
     </section>
 
+    <footer id="footer-page" class="container-fluid d-flex flex-column justify-content-center p-0">
+        <p class="text-center p-0 m-0"><strong>Todos os direitos reservados a © 2024 INITIUN</strong></p>
+    </footer>
+
     <script src="./scripts/menu-responsive/menuapp.js" defer></script>
+    <script src="./scripts/menu-responsive/animation/contacts.js" ></script>
+    <script src="./scripts/menu-responsive/animation/observer.js" ></script>
 </body>
 
 </html>
